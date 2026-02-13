@@ -40,19 +40,20 @@ function App() {
           element={
             <HomePage
               coins={coins}
-              filer={filter}
+              filter={filter}
               setFilter={setFilter}
               limit={limit}
               setLimit={setLimit}
               sortBy={sortBy}
+              setSortBy={setSortBy}
               error={error}
             />
           }
         />
         <Route path="/about" element={<AboutPage />} />
         <Route path="*" element={<NotFound />} />
-        <Route path="/coin/:id" element={<CoinDetailsPage />}   />
-       </Routes>
+        <Route path="/coin/:id" element={<CoinDetailsPage />} />
+      </Routes>
     </>
   );
 }
