@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 const CoinCard = ({ coin }) => {
   return (
-    <Link to={"/coin/${coin.id}"}>
+    <Link to={`/coin/${coin.id}`}>
       <div className="coin-card" key={coin.id}>
         <div className="coin-header">
           <img src={coin.image} alt={coin.name} className="coin-image" />
